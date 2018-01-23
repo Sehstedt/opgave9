@@ -53,8 +53,18 @@ img {
   grid-column: 6/span 4;
   margin-top: 5%; }
 
+#hero {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); }
+
 #heroImg {
+  grid-column: 1/span 10;
   position: relative; }
+
+#heroText {
+  position: absolute;
+  grid-column-start: 2;
+  color: white; }
 
 #trialBox {
   position: absolute; }
