@@ -47,6 +47,28 @@ img {
   background-color: #000000;
   position: absolute;
   z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+#logoHead{
+  width: 100px;
+  margin-top: 15%;
+  grid-column-start: 2;
+}
+
+#header a{
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+#links{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  grid-column: 6/span 4;
+  margin-top: 5%;
 }
 
 #heroImg{
