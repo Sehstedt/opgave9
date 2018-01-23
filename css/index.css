@@ -39,4 +39,10 @@ img {
 #trialBox {
   position: absolute; }
 
+.sublist {
+  display: grid; }
+
+.fa-cloud-download {
+  color: #ff8b38; }
+
 /*# sourceMappingURL=index.css.map */
