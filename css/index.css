@@ -3,7 +3,8 @@
   box-sizing: border-box; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -43,6 +44,15 @@ img {
   display: grid; }
 
 .fa-cloud-download {
-  color: #ff8b38; }
+  color: #ff8b38;
+  border: solid #ff8b38 2px;
+  border-radius: 50%;
+  padding: 0.5%; }
+
+.title {
+  font-weight: 600; }
+
+.brodtekst_1 {
+  font-weight: 300; }
 
 /*# sourceMappingURL=index.css.map */
