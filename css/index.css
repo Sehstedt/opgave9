@@ -29,6 +29,14 @@ img {
 #header {
   height: 70px;
   width: 100%;
-  background-color: #000000; }
+  background-color: #000000;
+  position: absolute;
+  z-index: 1; }
+
+#heroImg {
+  position: relative; }
+
+#trialBox {
+  position: absolute; }
 
 /*# sourceMappingURL=index.css.map */
