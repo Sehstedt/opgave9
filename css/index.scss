@@ -73,24 +73,41 @@ img {
 }
 
 #hero{
+  position: relative;
+  background-image: url("../Image/hero.png");
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-}
-
-#heroImg{
-  grid-column: 1/span 10;
-  position: relative;
-
+  grid-template-rows: repeat(8, 1fr);
+  height: 700px;
 }
 
 #heroText{
-  position: absolute;
-  grid-column-start: 2;
+  grid-column: 2/span 4;
+  grid-row: 3/span 4;
   color: white;
 }
 
 #trialBox{
   position: absolute;
+}
+
+#logoHero, #heroOver, #heroOverBorder, #heroUnder{
+  margin-bottom: 40px;
+}
+
+
+#heroOverBorder{
+  background-color: #ffffff;
+  width: 100px;
+  grid-column-start: 2;
+  height: 2px;
+}
+
+#dlBtn{
+  color: white;
+  border: solid #ffffff;
+  padding: 10px 30px;
+  width: 140px;
 }
 
 
