@@ -35,16 +35,15 @@ img {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(10, 1fr); }
+  #header a {
+    text-decoration: none;
+    color: white;
+    font-size: medium; }
 
 #topLink {
   width: 100px;
   margin-top: 12%;
   grid-column-start: 2; }
-
-#header a {
-  text-decoration: none;
-  color: white;
-  font-size: medium; }
 
 #links {
   display: flex;

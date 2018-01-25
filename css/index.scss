@@ -42,28 +42,38 @@ img {
 
 //-----------------------------------------Carolines css----------------------------------------
 
+$black: #000000;
+$white: #ffffff;
+$lightgrey: #f5f5f5;
+$darkgrey: #cccccc;
+$orange1: #ff9b51;
+$orange2: #ff8b38;
+$blackgrey: #333333;
+
+@mixin standardcolumns{
+  grid-template-columns: repeat(10, 1fr);
+}
+
 //------Header----------
 #header{
   height: 70px;
   width: 100%;
-  background-color: #000000;
+  background-color: $black;
   position: absolute;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  @include standardcolumns;
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+  }
 }
 
 #topLink{
   width: 100px;
   margin-top: 12%;
   grid-column-start: 2;
-}
-
-
-#header a{
-  text-decoration: none;
-  color: white;
-  font-size: medium;
 }
 
 #links{
@@ -74,13 +84,12 @@ img {
   margin-top: 4%;
 }
 
-
 //------Hero----------
 #hero{
   position: relative;
   background-image: url("../Image/hero.png");
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  @include standardcolumns;
   grid-template-rows: repeat(8, 1fr);
   height: 700px;
 }
@@ -91,14 +100,12 @@ img {
   color: white;
 }
 
-
 #logoHero, #heroOver, #heroOverBorder, #heroUnder{
   margin-bottom: 40px;
 }
 
-
 #heroOverBorder{
-  background-color: #ffffff;
+  background-color: $white;
   width: 100px;
   grid-column-start: 2;
   height: 2px;
@@ -106,7 +113,7 @@ img {
 
 #dlBtn{
   color: white;
-  border: solid #ffffff;
+  border: solid $white;
   padding: 10px 30px;
   width: 140px;
 }
@@ -122,7 +129,7 @@ img {
   height: 50px;
   grid-row-start: 3;
   border-radius: 5px 5px 0 0;
-  background-color: #f5f5f5;
+  background-color: $lightgrey;
   z-index: 2;
   padding: 10px 50px;
   font-size: larger;
@@ -131,7 +138,7 @@ img {
 }
 
 #free{
-  color: #ff9b51;
+  color: $orange1;
   display: inline;
 }
 
@@ -148,7 +155,7 @@ img {
   height: 60px;
   grid-row-start: 6;
   border-radius: 0 0 5px 5px;
-  background-color: #ff9b51;
+  background-color: $orange1;
   text-align: center;
   padding: 20px 0;
   color: white;
@@ -162,13 +169,13 @@ img {
 .trialInput{
   width: 100%;
   margin-bottom: 40px;
-  border: solid 0.5px #f5f5f5;
+  border: solid 0.5px $lightgrey;
 }
 
 //------Sociale medier----------
 #soMeBox{
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  @include standardcolumns;
   padding: 20px 0;
 }
 
@@ -177,7 +184,7 @@ img {
 }
 
 #soMeText{
-  color: #cccccc;
+  color: $darkgrey;
 }
 
 #soMeIcons{
@@ -193,23 +200,21 @@ img {
 }
 
 .iconLink{
-  color: #cccccc;
+  color: $darkgrey;
 }
-
-
 
 //------Content 1----------
 #content1{
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  @include standardcolumns;
   grid-template-rows: repeat(5, 1fr);
-  background-color: #f5f5f5;
+  background-color: $lightgrey;
 }
 
 #tab1{
   grid-column: 2/span 1;
   grid-row: 2/span 1;
-  background-color: #ff8b38;
+  background-color: $orange2;
   color: white;
   border-radius: 5px 5px 0 0;
 }
@@ -217,7 +222,7 @@ img {
 #tab2{
   grid-column: 2/span 1;
   grid-row: 3/span 1;
-  background-color: #333333;
+  background-color: $blackgrey;
   color: white;
   border-top: solid white 0.5px;
 }
@@ -225,7 +230,7 @@ img {
 #tab3{
   grid-column: 2/span 1;
   grid-row: 4/span 1;
-  background-color: #333333;
+  background-color: $blackgrey;
   color: white;
   border-top: solid white 0.5px;
   border-radius: 0 0 5px 5px;
@@ -253,7 +258,7 @@ img {
 }
 
 #cont1dlBtn{
-  background-color: #ff8b38;
+  background-color: $orange2;
   text-align: center;
   font-size: large;
   padding: 10px 0;
