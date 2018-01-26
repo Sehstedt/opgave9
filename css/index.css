@@ -252,9 +252,9 @@ img {
 
 .brodtekst_1 {
   width: 372px;
+  margin-top: 30px;
   font-weight: 300;
-  font-size: small;
-  margin-top: 30px; }
+  font-size: small; }
 
 .brodtekst_t {
   width: 324px;

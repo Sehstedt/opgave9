@@ -274,12 +274,19 @@ $blackgrey: #333333;
 
 //-----------------------------------------Sascha css----------------------------------------
 
-
-.features_1{
+@mixin flex{
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+}
+
+@mixin padding{
   padding: 106px 125px 106px 150px;
+}
+
+.features_1{
+  @include flex;
+  justify-content: space-between;
+  @include padding;
 }
 
 .billede_hus{
@@ -292,21 +299,20 @@ $blackgrey: #333333;
 
 .hr{
   size: 200px;
-  color: #ff9b51;
+  color: $orange1;
   width: 64px;
   align: left;
 }
 
 .title_element{
-  display: -webkit-flex;
-  display: flex;
+  @include flex;
   justify-content: space-between;
   margin-top: 40px;
 }
 
 .fa-cloud-download{
-  color: #ff9b51;
-  border: solid #ff9b51 2px;
+  color: $orange1;
+  border: solid $orange1 2px;
   border-radius: 50%;
   height: 5%;
   padding: 2%;
@@ -324,26 +330,28 @@ $blackgrey: #333333;
   font-weight: 600;
 }
 
-.brodtekst_1{
-  width: 372px;
+@mixin font{
   font-weight: 300;
   font-size: small;
+}
+
+.brodtekst_1{
+  width: 372px;
   margin-top: 30px;
+  @include font;
 }
 
 .brodtekst_t{
   width: 324px;
-  font-weight: 300;
-  font-size: small;
+  @include font;
 }
 
 
 .features_2{
-  display: -webkit-flex;
-  display: flex;
+  @include flex;
   justify-content: space-around;
-  padding: 106px 125px 106px 150px;
-  background-color: #f5f5f5;
+  @include padding;
+  background-color: $lightgrey;
 }
 
 .a_overskrift_2{
