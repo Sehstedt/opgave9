@@ -164,6 +164,8 @@ $blackgrey: #333333;
 .clickBtn{
   text-decoration: none;
   color: white;
+  grid-column-start: 7;
+  grid-row-start: 6;
 }
 
 .trialInput{
