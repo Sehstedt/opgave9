@@ -281,6 +281,16 @@ img {
   margin-right: -90px;
   margin-bottom: -70px; }
 
+h1 {
+  font-weight: normal; }
+
+h2 {
+  font-weight: normal;
+  font-size: 16px; }
+
+h3 {
+  font-weight: normal; }
+
 .customers {
   display: grid;
   grid-gap: 30px;
@@ -301,7 +311,8 @@ img {
 
 .customertext2 {
   grid-column: 4 / 8;
-  margin-left: 90px; }
+  margin-left: 90px;
+  font-size: 16px; }
 
 .customerbox1 {
   position: relative;
@@ -404,6 +415,9 @@ img {
   text-align: center;
   border: solid white;
   padding-top: 5px; }
+  .imgdwnd a {
+    text-decoration: none;
+    text-underline: none; }
 
 .contactus {
   display: grid;

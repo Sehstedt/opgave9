@@ -380,6 +380,17 @@ $blackgrey: #333333;
 
 
 //-----------------------------------------Mikkels css----------------------------------------
+h1{
+  font-weight: normal;
+}
+h2{
+  font-weight: normal;
+  font-size: 16px;
+}
+h3{
+  font-weight: normal;
+  
+}
 .customers{
   display: grid;
   grid-gap: 30px;
@@ -401,6 +412,7 @@ $blackgrey: #333333;
 .customertext2{
   grid-column: 4 / 8;
   margin-left: 90px;
+  font-size: 16px;
 }
 .customerbox1{
   position: relative;
@@ -503,6 +515,10 @@ $blackgrey: #333333;
   text-align: center;
   border: solid white;
   padding-top: 5px;
+  a{
+    text-decoration: none;
+    text-underline: none;
+  }
 }
 .contactus{
   display: grid;
@@ -515,6 +531,7 @@ $blackgrey: #333333;
   font-size: 35px;
   text-align: center;
 }
+
 .contactusline{
   grid-column: 5 / 7;
   margin-left: 91px;
