@@ -35,7 +35,6 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
-
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 }
@@ -50,4 +49,5 @@ img {
 
 @media print {
   // Alt der gælder for print specifikt
+
 }
