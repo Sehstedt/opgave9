@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 ErrorDocument 404 /fejl404.html
-=======
 ErrorDocument 403 /fejl403.html
->>>>>>> origin/master
