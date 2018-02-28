@@ -59,10 +59,11 @@ $blackgrey: #333333;
   height: 70px;
   width: 100%;
   background-color: $black;
-  position: absolute;
-  z-index: 1;
+  z-index: 5;
   display: grid;
   @include standardcolumns;
+  position: fixed;
+  top: 0;
   a{
     text-decoration: none;
     color: white;
